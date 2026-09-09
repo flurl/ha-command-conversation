@@ -1,0 +1,37 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Command Conversation",
+        "description": "The recognised speech is written to the command's stdin. Whatever the command prints to stdout is spoken back. Context is available as the environment variables HA_CONVERSATION_ID, HA_DEVICE_ID, HA_SATELLITE_ID, HA_LANGUAGE and HA_AGENT_ID.",
+        "data": {
+          "name": "Name",
+          "command": "Command",
+          "timeout": "Timeout (seconds)",
+          "error_message": "Spoken message if the command fails",
+          "languages": "Languages"
+        }
+      }
+    },
+    "error": {
+      "empty_command": "The command must not be empty."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Command Conversation",
+        "description": "The recognised speech is written to the command's stdin. Whatever the command prints to stdout is spoken back.",
+        "data": {
+          "command": "Command",
+          "timeout": "Timeout (seconds)",
+          "error_message": "Spoken message if the command fails",
+          "languages": "Languages"
+        }
+      }
+    },
+    "error": {
+      "empty_command": "The command must not be empty."
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Command Conversation",
+        "description": "Der erkannte Text wird an die Standardeingabe des Befehls geschrieben. Was der Befehl auf die Standardausgabe schreibt, wird vorgelesen. Kontext steht in den Umgebungsvariablen HA_CONVERSATION_ID, HA_DEVICE_ID, HA_SATELLITE_ID, HA_LANGUAGE und HA_AGENT_ID zur Verfügung.",
+        "data": {
+          "name": "Name",
+          "command": "Befehl",
+          "timeout": "Zeitlimit (Sekunden)",
+          "error_message": "Gesprochene Meldung, wenn der Befehl fehlschlägt",
+          "languages": "Sprachen"
+        }
+      }
+    },
+    "error": {
+      "empty_command": "Der Befehl darf nicht leer sein."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Command Conversation",
+        "description": "Der erkannte Text wird an die Standardeingabe des Befehls geschrieben. Was der Befehl auf die Standardausgabe schreibt, wird vorgelesen.",
+        "data": {
+          "command": "Befehl",
+          "timeout": "Zeitlimit (Sekunden)",
+          "error_message": "Gesprochene Meldung, wenn der Befehl fehlschlägt",
+          "languages": "Sprachen"
+        }
+      }
+    },
+    "error": {
+      "empty_command": "Der Befehl darf nicht leer sein."
+    }
+  }
+}
